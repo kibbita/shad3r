@@ -1,0 +1,31 @@
+# Cono simple
+
+# Vértice superior (punta)
+v  0.0  1.0  0.0
+
+# Vértices de la base (círculo)
+v  1.0  0.0  0.0
+v  0.5  0.0  0.866
+v -0.5  0.0  0.866
+v -1.0  0.0  0.0
+v -0.5  0.0 -0.866
+v  0.5  0.0 -0.866
+
+# Centro de la base
+v  0.0  0.0  0.0
+
+# Caras laterales (conectando la punta con los puntos de la base)
+f 1 2 3
+f 1 3 4
+f 1 4 5
+f 1 5 6
+f 1 6 7
+f 1 7 2
+
+# Base (opcional, usa el último vértice como centro de la base)
+f 8 2 3
+f 8 3 4
+f 8 4 5
+f 8 5 6
+f 8 6 7
+f 8 7 2
